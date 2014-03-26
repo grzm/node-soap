@@ -129,8 +129,14 @@ An instance of Client is passed to the soap.createClient callback.  It is used t
 ### Client.setSecurity(security) - use the specified security protocol (see WSSecurity below)
 
 ``` javascript
-  client.setSecurity(new WSSecurity('username', 'password'))
+  client.setSecurity(new soap.WSSecurity('username', 'password'))
 ```
+
+Included security protocols are
+
+ - BasicAuthSecurity
+ - WSSecurity
+ - ClientSSLSecurity
 
 ### Client.*method*(args, callback) - call *method* on the SOAP service.
 
